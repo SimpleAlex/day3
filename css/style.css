@@ -1,0 +1,95 @@
+body {
+  background: #00BCD4;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+::selection {
+  background: #3f3f4e;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+}
+.title p {
+  color: #212129;
+  font-size: 1.3em;
+}
+
+.title .notice {
+  color: #fff;
+}
+.title .notice span {
+  color: #212129;
+  font-weight: bold;
+  border-bottom: #fff 2px solid;
+}
+
+/*NAV*/
+.topnav {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background:#FFF8E1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.topnav li {
+  display: inline-block;
+  text-align: center;
+}
+.topnav li a {
+  display: inline-block;
+  color: #212129;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 300ms;
+  font-size: 1.2em;
+}
+.topnav li a:hover {
+  background: #00BCD4;
+  color: #fff;
+}
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 680px) {
+  /*ul.topnav li:not(:first-child){display: none;}*/
+  ul.topnav li {display: none;}
+  .topnav .icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive li.icon {
+    color: #fff;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  .topnav.responsive li a {
+    display: block;
+    text-align: center;
+  }
+}
